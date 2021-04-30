@@ -1,0 +1,28 @@
+기본개념 	https://wikidocs.net/22886
+밑바닥2	https://github.com/WegraLee/deep-learning-from-scratch-2/blob/master/dataset/sequence.py
+keras적용	https://towardsdatascience.com/how-to-implement-seq2seq-lstm-model-in-keras-shortcutnlp-6f355f3e5639
+keras적용2 https://stackabuse.com/python-for-nlp-neural-machine-translation-with-seq2seq-in-keras/
+HMM (hidden markov model)	https://lovit.github.io/nlp/2018/09/11/hmm_based_tagger/
+CRF (conditional random field)	https://lovit.github.io/nlp/2018/09/13/crf_based_tagger/
+
+영어-프랑스어 번역		https://github.com/thushv89/exercises_thushv_dot_com/blob/master/nmt_tutorial.ipynb
+한국어 seq2seq		https://ratsgo.github.io/natural%20language%20processing/2017/03/12/s2s/
+글자단위 모델링		https://github.com/go1217jo/yjNLP/blob/master/nn.py
+			https://wdprogrammer.tistory.com/37
+			https://keras.io/examples/lstm_seq2seq/
+bi-lstm(attension)		https://github.com/graykode/nlp-tutorial/blob/master/4-3.Bi-LSTM(Attention)/Bi_LSTM(Attention)_Tensor.ipynb
+☆★Attetion 메커니즘★☆	https://medium.com/platfarm/%EC%96%B4%ED%85%90%EC%85%98-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EA%B3%BC-transfomer-self-attention-842498fd3225
+BERT translation 소스코드 	https://github.com/bert-nmt/bert-nmt
+BERT 파인튜닝   http://freesearch.pe.kr/archives/4963
+multihead attention	https://github.com/CyberZHG/keras-multi-head
+
+GRU	https://yjjo.tistory.com/18
+!폰트통!
+
+한국어 품사태깅, 적용
+KoNLPy이용 영화리뷰 예제 https://cyc1am3n.github.io/2018/11/10/classifying_korean_movie_review.html
+카카오 형태소 분석기 https://lsjsj92.tistory.com/408
+한국어 NLP 노가다 없이 https://www.slideshare.net/kimhyunjoonglovit/pycon2017-koreannlp
+한국어 토크나이저	https://blog.pingpong.us/tokenizer/
+
+BLEU	 https://www.nltk.org/_modules/nltk/translate/bleu_score.html #멘붕쓰

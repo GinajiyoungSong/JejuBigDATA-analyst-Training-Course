@@ -1,0 +1,46 @@
+﻿manifold - MDS
+
+
+< 4차산업 >
+   - Iot
+   - Bigdata
+   - AI
+   - AR(증강현실) / VR(가상현실) / MR(혼합현실 : AR + VR)       
+   - fintech -> Blockchain(보안)
+
+
+신경망 : Tensorflow  -> ANN(인공신경망) -> FFNN (feedforward neural network : 순방향 신경망)
+                   -> MLP (multi-layer perceptron : 다층 퍼셉트론)  -> XOR (기울기소멸 (*) 문제) -> LSTH (long short-term memory : 장단기 메모리)
+  
+
+데이터 입력후
+
+preprocessing :
+  - 정규화 normalization 을 꼭해줘야 한다. (신경망에서는 꼭! 필수)
+
+learning :
+  - 데이터가 들어오면 행렬곱하기 (원래데이터 * 가중치) => 모델   (가중치는 처음에는 랜덤으로 초기화 됐다가 학습하면서 변하게 된다. 학습이 끝나면 가중치 fix)
+  - fully connected : 1열로 들어와야 한다. (변수를 줄여야 한다. ) 각변수에 데이터가 영향을 주는 걸 계산 후 (내적해서) 1열로 만든다. = 특징추출
+  - 이때 너무 큰 데이터를 한번에 줄이면 손실되는 데이터가 너무 많아서 중간에 layer를 넣는다. (가중치 넣기) 그러면 손실 데이터가 적어진다
+  
+Activation function의 역할 : 분류량 예측, 몇개로 분류할지 예측한다. 
+  - Activation function ( 맵핑시키기 - identity, sigmoid, softmax 를 사용해서 )  
+              - identity : 회귀( 그대로 두기?)  <- MLPRegression 함수사용   (기울기 함수(cost function) (Y-Y)^2 : 우리가 선택만 하면 된다. (계산은 컴퓨터가) )
+              - sigmoid :  (0~1) 분류  <- MLPClassifier 함수사용
+              - softmax :  클래스가 여려개인걸 분류
+ 
+      미분 : 방향값을 알기위해 하는것 (+,-)
+      가중치를 변화시킨다.  변화률이 너무 크면 점프할 수 있어서 그걸 방지하기 위해 learning-rate (학습률)을 정한다 <- solver이 정해줌  : hyperparameter
+
+solver : 
+ - sgd (stochast gradian descent : 확률적 경사하강) 
+ - adam : momentum ( 지역해를 넘기위해서 가는 방향으로 더 넘겨보기 <- 처음에는 많이주고 점점 줄여주기 (진동을) ) 
+
+
+순전파 pre propagation : 예측하는 과정 (y_hat)
+역전파 back propagation : 가중치를 조절하는 과정  <- solver가 해주니까 신경쓸 필요 없다. 
+                                                                      단, hyper (solver를 어떤걸 사용할지, learning-rate을 얼마나 정할건지) 조절 중요
+
+
+
+

@@ -1,0 +1,6 @@
+dropoutX_batch16,0.798228124
+dropout_batch16,0.783954905
+dropout_X_batch32,0.777805236
+dropout_batch32,0.707518865
+dropout??batch64,0.764033681
+dropout_batch64,0.421400607
