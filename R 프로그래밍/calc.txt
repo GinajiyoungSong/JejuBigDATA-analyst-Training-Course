@@ -1,0 +1,7 @@
+calc<-function(x)
+{
+asum<-sum(x)
+asort<-sort(x)
+result<-list(합계=asum,정렬결과=asort)
+return(result)
+}
